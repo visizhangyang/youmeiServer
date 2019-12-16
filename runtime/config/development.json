@@ -1,0 +1,230 @@
+{
+  "admin": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx9b31141e49ce78f9",
+      "secret": "d7c5b8d9af4cdd879a3be083b6692aad",
+      "mch_id": "1561414331",
+      "partner_key": "rLdTXmP8n9a5GBNe1onyclQJi8JMwI7l",
+      "notify_url": "https://www.nideshop.com/api/pay/notify"
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "/Users/yang/learn/ITcast/weixinMini/youmei-api/runtime/cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "nideshop",
+        "prefix": "nideshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "qwer1234",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "/Users/yang/learn/ITcast/weixinMini/youmei-api/logs/app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "/Users/yang/learn/ITcast/weixinMini/youmei-api/logs/app.log"
+      }
+    }
+  },
+  "api": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx9b31141e49ce78f9",
+      "secret": "d7c5b8d9af4cdd879a3be083b6692aad",
+      "mch_id": "1561414331",
+      "partner_key": "rLdTXmP8n9a5GBNe1onyclQJi8JMwI7l",
+      "notify_url": "https://www.nideshop.com/api/pay/notify"
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "publicController": [
+      "index",
+      "catalog",
+      "topic",
+      "auth",
+      "goods",
+      "brand",
+      "search",
+      "region"
+    ],
+    "publicAction": [
+      "comment/list",
+      "comment/count",
+      "cart/index",
+      "cart/add",
+      "cart/checked",
+      "cart/update",
+      "cart/delete",
+      "cart/goodscount",
+      "pay/notify"
+    ],
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "/Users/yang/learn/ITcast/weixinMini/youmei-api/runtime/cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "nideshop",
+        "prefix": "nideshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "qwer1234",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "/Users/yang/learn/ITcast/weixinMini/youmei-api/logs/app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "/Users/yang/learn/ITcast/weixinMini/youmei-api/logs/app.log"
+      }
+    }
+  },
+  "common": {
+    "port": 8360,
+    "workers": 0,
+    "stickyCluster": false,
+    "startServerTimeout": 3000,
+    "reloadSignal": "SIGUSR2",
+    "processKillTimeout": 10000,
+    "jsonpCallbackField": "callback",
+    "jsonContentType": "application/json",
+    "jsonpContentType": "application/javascript",
+    "errnoField": "errno",
+    "errmsgField": "errmsg",
+    "defaultErrno": 1000,
+    "validateDefaultErrno": 1001,
+    "default_module": "api",
+    "weixin": {
+      "appid": "wx9b31141e49ce78f9",
+      "secret": "d7c5b8d9af4cdd879a3be083b6692aad",
+      "mch_id": "1561414331",
+      "partner_key": "rLdTXmP8n9a5GBNe1onyclQJi8JMwI7l",
+      "notify_url": "https://www.nideshop.com/api/pay/notify"
+    },
+    "express": {
+      "appid": "",
+      "appkey": "",
+      "request_url": "http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx"
+    },
+    "cache": {
+      "type": "file",
+      "file": {
+        "timeout": 86400000,
+        "cachePath": "/Users/yang/learn/ITcast/weixinMini/youmei-api/runtime/cache",
+        "pathDepth": 1,
+        "gcInterval": 86400000
+      }
+    },
+    "model": {
+      "type": "mysql",
+      "mysql": {
+        "logConnect": true,
+        "logSql": true,
+        "database": "nideshop",
+        "prefix": "nideshop_",
+        "encoding": "utf8mb4",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "qwer1234",
+        "dateStrings": true
+      }
+    },
+    "logger": {
+      "type": "console",
+      "console": {},
+      "file": {
+        "backups": 10,
+        "absolute": true,
+        "maxLogSize": 51200,
+        "filename": "/Users/yang/learn/ITcast/weixinMini/youmei-api/logs/app.log"
+      },
+      "dateFile": {
+        "level": "ALL",
+        "absolute": true,
+        "pattern": "-yyyy-MM-dd",
+        "alwaysIncludePattern": true,
+        "filename": "/Users/yang/learn/ITcast/weixinMini/youmei-api/logs/app.log"
+      }
+    }
+  }
+}
